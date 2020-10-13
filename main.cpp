@@ -20,7 +20,7 @@
 #include <stdio.h>
 #include <algorithm>
 
-#define SIMULATION
+//#define SIMULATION
 #define MIGRATIONUP
 
 #define DISPLAYANIMAL
@@ -236,11 +236,10 @@ double evaluate(TVector<double> &v, RandomState &rs) {
 	double V = speed*StepSize;
 	double phi, theta, dv;
 	int DV, sign;
-	double AFD_state, AFD_output, CPG_output, AFD_step;
+	double AFD_state, AFD_output, CPG_output;
 	double curve, Curve, direction_in, Direction_in;
 	double f, f2, F0, F1, F2, F3, F4, F5;
 	int T, path, P;
-	double Tconst, Tamp, Tramp, Tstep; // Added on 20190521
 	double Time;
 	double Index = 0;
 	int Count = 0;
